@@ -69,8 +69,8 @@ Both models perform worse for women and Black individuals than for men and White
 
 ```
 .
-├── README.md                              — this file
-├── Final_Project_Konstantin.ipynb         — completed notebook, all cells run
+├── [`README.md`](./README.md)             — this file
+├── [`Codebook.ipynb`](./Codebook.ipynb)   — completed notebook, all cells run
 └── requirements.txt                       — Python dependencies
 ```
 
