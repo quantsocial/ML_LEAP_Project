@@ -59,6 +59,11 @@ This dataset does not produce a decisive win for either approach. Logistic regre
 
 Both models perform worse for women and Black individuals than for men and White individuals, so this model risks reproducing existing income disparities rather than correcting them. Since missing someone who deserves outreach (a false negative) is more costly than over-including someone (a false positive), and both models lean toward false negatives, this uneven, error-prone behavior makes the case for logistic regression's transparency — an opaque model's mistakes are harder to catch and explain when they affect real people.
 
+## Reflection
+
+**What worked well**: Building the pipeline once, and reusing it was in particulur helpful since the preprocessing logic was identical for both models. A small detail that made the whole comparison more trustworthy. In addition, the extended analysis was really helpful in understanding how the different models actually performed. Especially the Threshold tuning which showed a much better perspective on the F1 score gap between the models.
+
+**What was harder than expected**: Because both models used the same pipeline, it is important that variable names are different to not have one model affect the other. This took some time to adjust too and get a functioning workflow going. Furthermore, it was difficult at times to balance rigor against scope. Constantly deciding how deep to go on any one check or section is very difficult. Knowing when "good enough" is actually enough for the assigned purpose.
 
 **What could be improved with more time:**
 - Average the network's results over multiple random seeds rather than a single training run, since neural network performance can vary run-to-run.
